@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2018/W32TeX)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: exemplo.aux
+The style file: ufescomp-unsrt.bst
+Database file #1: bibliografia.bib
+Warning--entry type for "www:pt.wikipedia.org" isn't style-file defined
+--line 43 of file bibliografia.bib
+Warning--empty journal in cristovao2016modelo
+Warning--empty journal in lassila1998resource
+Warning--empty address in eppler2006knowledge
+Warning--empty journal in melgar2011modelo
+Warning--empty journal in lapolli2014visualizaccao
+Warning--empty journal in valente2004padroes
+Warning--empty institution in cleverdon1966aslib
+Warning--empty address in spink2005multitasking
+Warning--empty journal in beck2001manifesto
+Warning--empty year in campionejava
+Warning--empty year in www:pt.wikipedia.org
+You've used 38 entries,
+            2630 wiz_defined-function locations,
+            746 strings with 10358 characters,
+and the built_in function-call counts, 13670 in all, are:
+= -- 1119
+> -- 472
+< -- 48
++ -- 223
+- -- 147
+* -- 1136
+:= -- 1979
+add.period$ -- 119
+call.type$ -- 38
+change.case$ -- 39
+chr.to.int$ -- 38
+cite$ -- 50
+duplicate$ -- 893
+empty$ -- 1459
+format.name$ -- 211
+if$ -- 2945
+int.to.chr$ -- 1
+int.to.str$ -- 39
+missing$ -- 40
+newline$ -- 175
+num.names$ -- 111
+pop$ -- 380
+preamble$ -- 1
+purify$ -- 38
+quote$ -- 0
+skip$ -- 469
+stack$ -- 0
+substring$ -- 419
+swap$ -- 255
+text.length$ -- 17
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 239
+warning$ -- 11
+while$ -- 105
+width$ -- 0
+write$ -- 454
+(There were 12 warnings)

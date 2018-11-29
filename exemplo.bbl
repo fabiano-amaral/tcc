@@ -1,0 +1,250 @@
+\begin{thebibliography}{38}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+\newcommand{\enquote}[1]{``#1''}
+
+\bibitem[\MakeUppercase{Schmidt}(2010)Schmidt]{eric:techcrunch}
+\MakeUppercase{Schmidt, E.}
+\newblock \enquote{Eric Schmidt: Every 2 Days We Create As Much Information As
+  We Did Up To 2003 | TechCrunch}. 2010.
+\newblock Dispon{\' i}vel em:
+  \textless\url{https://techcrunch.com/2010/08/04/schmidt-data/}\textgreater .
+\newblock [Online; acessado em 28 de Junho 2018].
+
+\bibitem[\MakeUppercase{Wersig} e \MakeUppercase{Neveling}(1975)Wersig e
+  Neveling]{wersig1975phenomena}
+\MakeUppercase{Wersig, G., Neveling, U.}
+\newblock \enquote{The phenomena of interest to information science}, \emph{The
+  information scientist}, v.~9, n.~4, \penalty0 pp.~127--140, 1975.
+
+\bibitem[\MakeUppercase{Ferneda}(2003)Ferneda]{ferneda2003recuperaccao}
+\MakeUppercase{Ferneda, E.}
+\newblock \emph{Recupera{\c{c}}{\~a}o de Informa{\c{c}}{\~a}o: An{\'a}lise
+  sobre a contribui{\c{c}}{\~a}o da Ci{\^e}ncia da Computa{\c{c}}{\~a}o para a
+  Ci{\^e}ncia da Informa{\c{c}}{\~a}o}.
+\newblock Tese de Doutorado, Universidade de S{\~a}o Paulo, 2003.
+
+\bibitem[\MakeUppercase{Zhang}(2007)Zhang]{zhang2007visualization}
+\MakeUppercase{Zhang, J.}
+\newblock \emph{Visualization for information retrieval}, v.~23.
+\newblock Springer Science \& Business Media, 2007.
+
+\bibitem[\MakeUppercase{Cristov{\~a}o}(2016)Cristov{\~a}o]{cristovao2016modelo}
+\MakeUppercase{Cristov{\~a}o, H.~M.}
+\newblock \enquote{Um modelo h{\'\i}brido de recupera{\c{c}}{\~a}o de
+  informa{\c{c}}{\~a}o e conhecimento baseado na s{\'\i}ntese de mapas
+  conceituais obtidos por opera{\c{c}}{\~o}es de transforma{\c{c}}{\~a}o de
+  redes complexas orientadas por busca de relacionamentos entre termos de
+  consulta em bases de dados ligados}, 2016.
+
+\bibitem[\MakeUppercase{Berners-Lee}\emph{ et~al.}(2001)Berners-Lee, Hendler, e
+  Lassila]{berners2001semantic}
+\MakeUppercase{Berners-Lee, T., Hendler, J., Lassila, O.}
+\newblock \enquote{The semantic web}, \emph{Scientific american}, v.~284, n.~5,
+  \penalty0 pp.~34--43, 2001.
+
+\bibitem[\MakeUppercase{Siegel}(2009)Siegel]{siegel2009pull}
+\MakeUppercase{Siegel, D.}
+\newblock \emph{Pull: The power of the semantic web to transform your
+  business}.
+\newblock Penguin, 2009.
+
+\bibitem[\MakeUppercase{Saad~Corr{\^e}a} e
+  \MakeUppercase{Bertocchi}(2012)Saad~Corr{\^e}a e Bertocchi]{saad2012cena}
+\MakeUppercase{Saad~Corr{\^e}a, E., Bertocchi, D.}
+\newblock \enquote{A cena cibercultural do jornalismo contempor{\^a}neo: web
+  sem{\^a}ntica, algoritmos, aplicativos e curadoria}, \emph{Matrizes}, v.~5,
+  n.~2, 2012.
+
+\bibitem[\MakeUppercase{Berners-Lee}(2010)Berners-Lee]{berners2010linked}
+\MakeUppercase{Berners-Lee, T.}
+\newblock \enquote{Linked Data. W3C Design Issues, July 2006}. 2010.
+
+\bibitem[\MakeUppercase{Segundo}(2015)Segundo]{segundo2015web}
+\MakeUppercase{Segundo, J. E.~S.}
+\newblock \enquote{Web sem{\^a}ntica, dados ligados e dados abertos: uma
+  vis{\~a}o dos desafios do Brasil frente {\`a}s iniciativas internacionais},
+  \emph{Enancib}, v.~16, 2015.
+
+\bibitem[\MakeUppercase{Heath} e \MakeUppercase{Bizer}(2011)Heath e
+  Bizer]{heath2011linked}
+\MakeUppercase{Heath, T., Bizer, C.}
+\newblock \enquote{Linked data: Evolving the web into a global data space},
+  \emph{Synthesis lectures on the semantic web: theory and technology}, v.~1,
+  n.~1, \penalty0 pp.~1--136, 2011.
+
+\bibitem[\MakeUppercase{Lassila}\emph{ et~al.}(1998)Lassila, Swick,
+  et~al.]{lassila1998resource}
+\MakeUppercase{Lassila, O., Swick, R.~R., others}.
+\newblock \enquote{Resource description framework (RDF) model and syntax
+  specification}, 1998.
+
+\bibitem[\MakeUppercase{Shannon} e \MakeUppercase{Weaver}(1949)Shannon e
+  Weaver]{shannon1949mathematical}
+\MakeUppercase{Shannon, C.~E., Weaver, W.}
+\newblock \enquote{The Mathematical Theory of Communication (Champaign, IL},
+  \emph{Urbana: University of Illinois Press}, 1949.
+
+\bibitem[\MakeUppercase{Setzer}(2001)Setzer]{setzer2001meios}
+\MakeUppercase{Setzer, V.~W.}
+\newblock \emph{Meios eletr{\^o}nicos e educa{\c{c}}{\~a}o: uma vis{\~a}o
+  alternativa}.
+\newblock Escrituras S{\~a}o Paulo, 2001.
+
+\bibitem[\MakeUppercase{Eppler} e \MakeUppercase{Burkhard}(2006)Eppler e
+  Burkhard]{eppler2006knowledge}
+\MakeUppercase{Eppler, M.~J., Burkhard, R.~A.}
+\newblock \enquote{Knowledge visualization}. In: \emph{Encyclopedia of
+  knowledge management}, IGI Global, pp. 551--560, 2006.
+
+\bibitem[\MakeUppercase{Tergan} e \MakeUppercase{Keller}(2005)Tergan e
+  Keller]{tergan2005knowledge}
+\MakeUppercase{Tergan, S.-O., Keller, T.}
+\newblock \emph{Knowledge and information visualization: Searching for
+  synergies}, v. 3426.
+\newblock Springer, 2005.
+
+\bibitem[\MakeUppercase{Melgar~Sasieta}\emph{ et~al.}(2011)Melgar~Sasieta
+  et~al.]{melgar2011modelo}
+\MakeUppercase{Melgar~Sasieta, H.~A., others}.
+\newblock \enquote{Um Modelo para a visualiza{\c{c}}{\~a}o de conhecimento
+  baseado em imagens sem{\^a}nticas}, 2011.
+
+\bibitem[\MakeUppercase{Lapolli}\emph{ et~al.}(2014)Lapolli
+  et~al.]{lapolli2014visualizaccao}
+\MakeUppercase{Lapolli, M., others}.
+\newblock \enquote{Visualiza{\c{c}}{\~a}o do conhecimento por meio de
+  narrativas infogr{\'a}ficas na web voltadas para surdos em comunidades de
+  pr{\'a}tica}, 2014.
+
+\bibitem[\MakeUppercase{Hewett}\emph{ et~al.}(1992)Hewett, Baecker, Card,
+  Carey, Gasen, Mantei, Perlman, Strong, e Verplank]{hewett1992acm}
+\MakeUppercase{Hewett, T.~T., Baecker, R., Card, S., \MakeLowercase{et~al.}}
+\newblock \emph{ACM SIGCHI curricula for human-computer interaction}.
+\newblock ACM, 1992.
+
+\bibitem[\MakeUppercase{Valente}\emph{ et~al.}(2004)Valente
+  et~al.]{valente2004padroes}
+\MakeUppercase{Valente, E.~C., others}.
+\newblock \enquote{Padr{\~o}es de intera{\c{c}}{\~a}o e usabilidade}, 2004.
+
+\bibitem[\MakeUppercase{Shneiderman}(2010)Shneiderman]{shneiderman2010designing}
+\MakeUppercase{Shneiderman, B.}
+\newblock \emph{Designing the user interface: strategies for effective
+  human-computer interaction}.
+\newblock Pearson Education India, 2010.
+
+\bibitem[\MakeUppercase{de~Abreu~Cybis}\emph{ et~al.}(2015)de~Abreu~Cybis,
+  Betiol, e Faust]{de2015ergonomia}
+\MakeUppercase{de~Abreu~Cybis, W., Betiol, A.~H., Faust, R.}
+\newblock \emph{Ergonomia e Usabilidade 3{\textordfeminine} edi{\c{c}}{\~a}o:
+  Conhecimentos, M{\'e}todos e Aplica{\c{c}}{\~o}es}.
+\newblock Novatec Editora, 2015.
+
+\bibitem[\MakeUppercase{Bevan}(2001)Bevan]{bevan2001international}
+\MakeUppercase{Bevan, N.}
+\newblock \enquote{International standards for HCI and usability},
+  \emph{International journal of human-computer studies}, v.~55, n.~4,
+  \penalty0 pp.~533--552, 2001.
+
+\bibitem[\MakeUppercase{Nielsen}(1994)Nielsen]{nielsen1994usability}
+\MakeUppercase{Nielsen, J.}
+\newblock \enquote{Usability inspection methods}. In: \emph{Conference
+  companion on Human factors in computing systems}, pp. 413--414. ACM, 1994.
+
+\bibitem[\MakeUppercase{Marchionini}(2006)Marchionini]{marchionini2006toward}
+\MakeUppercase{Marchionini, G.}
+\newblock \enquote{Toward human-computer information retrieval}, \emph{Bulletin
+  of the American Society for Information Science and Technology}, v.~32, n.~5,
+  \penalty0 pp.~20--22, 2006.
+
+\bibitem[\MakeUppercase{Cool} e \MakeUppercase{Belkin}(2011)Cool e
+  Belkin]{cool2011interactive}
+\MakeUppercase{Cool, C., Belkin, N.~J.}
+\newblock \enquote{Interactive information retrieval: History and background},
+  \emph{Interactive information seeking, behaviour and retrieval}, pp. 1--14,
+  2011.
+
+\bibitem[\MakeUppercase{Cleverdon} e \MakeUppercase{Keen}(1966)Cleverdon e
+  Keen]{cleverdon1966aslib}
+\MakeUppercase{Cleverdon, C.~W., Keen, M.}
+\newblock \emph{Aslib Cranfield research project-Factors determining the
+  performance of indexing systems; Volume 2, Test results}.
+\newblock Relat{\'o}rio t{\'e}cnico, 1966.
+
+\bibitem[\MakeUppercase{Robertson} e
+  \MakeUppercase{Hancock-Beaulieu}(1992)Robertson e
+  Hancock-Beaulieu]{robertson1992evaluation}
+\MakeUppercase{Robertson, S.~E., Hancock-Beaulieu, M.}
+\newblock \enquote{On the evaluation of IR systems}, \emph{Inf. Process.
+  Manage.}, v.~28, n.~4, \penalty0 pp.~457--466, 1992.
+
+\bibitem[\MakeUppercase{Ingwersen}(1992)Ingwersen]{ingwersen1992information}
+\MakeUppercase{Ingwersen, P.}
+\newblock \emph{Information retrieval interaction}, v. 246.
+\newblock Taylor Graham London, 1992.
+
+\bibitem[\MakeUppercase{Spink} e \MakeUppercase{Cole}(2005)Spink e
+  Cole]{spink2005multitasking}
+\MakeUppercase{Spink, A., Cole, C.}
+\newblock \enquote{A multitasking framework for cognitive information
+  retrieval}. In: \emph{New directions in cognitive information retrieval},
+  Springer, pp. 99--112, 2005.
+
+\bibitem[\MakeUppercase{Kelly} e \MakeUppercase{Sugimoto}(2013)Kelly e
+  Sugimoto]{kelly2013systematic}
+\MakeUppercase{Kelly, D., Sugimoto, C.~R.}
+\newblock \enquote{A systematic review of interactive information retrieval
+  evaluation studies, 1967--2006}, \emph{Journal of the American Society for
+  Information Science and Technology}, v.~64, n.~4, \penalty0 pp.~745--770,
+  2013.
+
+\bibitem[\MakeUppercase{Soares}(2004)Soares]{INFOCOMP}
+\MakeUppercase{Soares, M.}
+\newblock \enquote{Comparação entre Metodologias Ágeis e Tradicionais para o
+  Desenvolvimento de Software}, \emph{INFOCOMP}, v.~3, n.~2, \penalty0
+  pp.~8--13, 2004.
+\newblock ISSN: 1982-3363.
+\newblock Dispon{\' i}vel em:
+  \textless\url{http://www.dcc.ufla.br/infocomp/index.php/INFOCOMP/article/view/68}\textgreater
+  .
+
+\bibitem[\MakeUppercase{Sommerville}(2003)Sommerville]{sommerville2003engenharia}
+\MakeUppercase{Sommerville, I.}
+\newblock \enquote{Engenharia de Software, Tradu{\c{c}}{\~a}o de Andr{\'e}
+  Maur{\'\i}cio de Andrade Ribeiro; Revis{\~a}o t{\'e}cnica de Kechi Hirama}.
+  2003.
+
+\bibitem[\MakeUppercase{Beck}(2004)Beck]{beck2004programaccao}
+\MakeUppercase{Beck, K.}
+\newblock \emph{Programa{\c{c}}{\~a}o extrema (xp) explicada}.
+\newblock Bookman, 2004.
+
+\bibitem[\MakeUppercase{Beck}\emph{ et~al.}(2001)Beck, Beedle, Van~Bennekum,
+  Cockburn, Cunningham, Fowler, Grenning, Highsmith, Hunt, Jeffries,
+  et~al.]{beck2001manifesto}
+\MakeUppercase{Beck, K., Beedle, M., Van~Bennekum, A., \MakeLowercase{et~al.}}
+\newblock \enquote{Manifesto for agile software development}, 2001.
+
+\bibitem[\MakeUppercase{Campione} e \MakeUppercase{Walrath}()Campione e
+  Walrath]{campionejava}
+\MakeUppercase{Campione, M., Walrath, K.}
+\newblock \enquote{The Java Tutorial, Object-Oriented Programming for the
+  Internet, 1997}. .
+
+\bibitem[\MakeUppercase{Blom}\emph{ et~al.}(2008)Blom, Book, Gruhn, Hrushchak,
+  e K{\"o}hler]{blom2008write}
+\MakeUppercase{Blom, S., Book, M., Gruhn, V., \MakeLowercase{et~al.}}
+\newblock \enquote{Write once, run anywhere a survey of mobile runtime
+  environments}. In: \emph{Grid and Pervasive Computing Workshops, 2008. GPC
+  Workshops' 08. The 3rd International Conference on}, pp. 132--137. IEEE,
+  2008.
+
+\bibitem[www()]{www:pt.wikipedia.org}
+\enquote{JavaFX – Wikipédia, a enciclopédia livre}. Dispon{\' i}vel em:
+  \textless\url{https://pt.wikipedia.org/wiki/JavaFX}\textgreater .
+
+\end{thebibliography}

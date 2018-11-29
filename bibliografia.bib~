@@ -1,0 +1,112 @@
+%
+% This is file `ufescomp.bib'.
+%
+% Bibliographic references for the documentation.
+%
+% Copyright (C) 2016 UfesTeX Project and any individual authors listed
+% elsewhere in this file.
+%
+% This program is free software; you can redistribute it and/or modify
+% it under the terms of the GNU General Public License version 3 as
+% published by the Free Software Foundation.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+% GNU General Public License version 3 for more details.
+%
+% You should have received a copy of the GNU General Public License
+% version 3 along with this package (see COPYING file).
+% If not, see <http://www.gnu.org/licenses/>.
+%
+% Author(s): Luis Otavio Rigo Junior
+%
+
+@BOOK{SOMMERVILLE,
+   author = "I. Sommerville",
+   title = "Engenharia de Software",
+   edition = "8",
+   address = "São Paulo",
+   publisher = "Pearson Education",
+   year = "2007",
+}
+
+@BOOK{SOMMERVILLE2011,
+   author = "I. Sommerville",
+   title = "Engenharia de Software",
+   edition = "11",
+   address = "São Paulo",
+   publisher = "Pearson Education",
+   year = "2011",
+}
+
+@ARTICLE{UMLMODELING,
+   author = "Michel. R. V. Chaudron and W. Heijstek and A. Nugroho",
+   title = {How Effective is UML modeling? An empirical perspective on costs and benefits},
+   journal = {Springer-Verlag 2012},
+   volume = {1},
+   number = {1},
+   pages = {571--579},
+   month = aug,
+   year = 2012,
+}
+
+@ARTICLE{USECASE,
+   author = "I. Jacbson and I. Spence and B. Kerr",
+   title = {Use-case 2.0},
+   journal = {COMMUNICATIONS OF THE ACM},
+   volume = {59},
+   number = {5},
+   pages = {61--69},
+   month = May,
+   year = 2016,
+}
+
+@BOOK{UML20,
+   author = "R. P. Silva",
+   title = "UML2 em Modelagem Orientada a Objetos",
+   edition = "1",
+   address = "Florianópolis - SC",
+   publisher = "Visual Books",
+   year = "2007",
+}
+
+@ARTICLE{UMLSIMPLES,
+   author = "J. Erickson and K. Siau.",
+   title = {Can UML Be Simplified? Practitioner Use of UML in Separate Domains.},
+   journal = {CEUR Workshop Porceedings},
+   volume = {365},
+   number = {9},
+   pages = {81--90},
+   month = Jun,
+   year = 2007,
+}
+
+@ARTICLE{NOSHIT,
+   author = "P. Marian",
+   title = {“No shit” or “Oh, shit!”: responses to observations on the use
+of UML in professional practice},
+   journal = {Springer-Verlag Berlin Heidelberg},
+   volume = {1},
+   number = {13},
+   pages = {1225--1235},
+   month = Aug,
+   year = 2014,
+}
+
+@misc{ laravel,
+  author = "Wendell Adriel",
+  title = {{DEVMEDIA} Introdução ao Laravel Framework PHP},
+  year = "2016",
+  url = "https://www.devmedia.com.br/introducao-ao-laravel-framework-php/33173",
+  note = "[Online; acessado 10-novembro-2017]"
+}
+
+@misc{ PHP,
+  author = "The PHP Group",
+  title = {{PHP} O que é o PHP?},
+  year = "2001",
+  url = "https://www.devmedia.com.br/introducao-ao-laravel-framework-php/33173",
+  note = "[Online; acessado 25-Dezembro-2017]"
+}
+https://secure.php.net/manual/pt_BR/intro-whatis.php

@@ -1,0 +1,292 @@
+%%
+%% This is file `exemplo.tex',
+%% generated with the docstrip utility.
+%%
+%% This is a sample monograph which illustrates the use of `ufescomp' document
+%% class and `ufescomp-unsrt' BibTeX style.
+%% 
+%% \CheckSum{1416}
+%% \CharacterTable
+%%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%%   Digits        \0\1\2\3\4\5\6\7\8\9
+%%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%%   Dollar        \$     Percent       \%     Ampersand     \&
+%%   Acute accent  \'     Left paren    \(     Right paren   \)
+%%   Asterisk      \*     Plus          \+     Comma         \,
+%%   Minus         \-     Point         \.     Solidus       \/
+%%   Colon         \:     Semicolon     \;     Less than     \<
+%%   Equals        \=     Greater than  \>     Question mark \?
+%%   Commercial at \@     Left bracket  \[     Backslash     \\
+%%   Right bracket \]     Circumflex    \^     Underscore    \_
+%%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%%   Right brace   \}     Tilde         \~}
+%%
+\documentclass[bach,numbers]{ufescomp}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage[pdftex]{color}
+%% Para aceitar acentuação sem macro
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{rotating}
+
+\makelosymbols
+\makeloabbreviations
+
+\begin{document}
+  \curso{Engenharia da Computação}
+  
+  \title{Uma interface interativa para auxílio na recuperação de dados ligados da DBpedia.}
+  \tituloingles{an interactive interface to aid in the recovery of DBpedia data.}
+  
+  \author{Fabiano}{Amaral Freitas}
+  
+  \orientador{Profª.}{D.Sc. Henrique}{Monteiro Cristovão}
+
+  
+  % Coloque apenas os examinadores que nao sao orientadores.
+  \examinador{Profª.}{algum}{professor}{D.Sc.}
+  \examinador{Prof.}{outro}{professor}{}
+  
+  \date{11}{07}{2018}
+
+  \palavrachave{web semântica}
+  \palavrachave{dados ligados}
+  \palavrachave{recuperação da informação}
+  \palavrachave{Web}
+  \palavrachave{Sistema de Informação}
+  \palavrachaveingles{semantic web}
+  \palavrachaveingles{linked data}
+  \palavrachaveingles{information retrieval}
+  \palavrachaveingles{Web}
+  \palavrachaveingles{Information System}
+
+  \maketitle
+  \frontmatter
+  
+  %\dedicatoria{A alguém cujo valor é digno desta dedicatória.}
+  \epigrafe{Pois aqui, como vê, você tem de correr o mais que pode para continuar no mesmo lugar. Se quiser ir a alguma outra parte, tem de correr no mínimo duas vezes mais rápido!.}{Alice}{Através do espelho}
+
+%  \chapter*{Agradecimentos}
+  \begin{agradecimentos}
+	Gostaria de agradecer a todos que me ajudaram direta e indiretamente na construção deste trabalho. Agradeço a Deus pela vida. Agradeço aos meus pais por estarem sempre presentes me incentivando a continuar seguindo em frente. Agradeço aos amigos por estarem sempre compartilhando momentos felizes e tristes comigo, juntos aprendemos valiosas lições. Agradeço aos professores que com uma enorme paciência, conseguiram transmitir o conhecimento necessário para que eu pudesse chegar onde estou. 
+  \end{agradecimentos}
+
+  \begin{abstract}
+
+algum texto de abstract
+
+  \end{abstract}
+
+  \begin{foreignabstract}
+algum texto de abstract em inglês
+  \end{foreignabstract}
+  
+  \listoffigures
+  \listoftables
+  \printlosymbols
+  \printloabbreviations
+  \tableofcontents
+
+  \mainmatter
+  \setcounter{page}{12}
+  \chapter{Introdução}
+  \abbrev{IR}{Information Retrieval}
+  Com a democratização da internet, houve uma explosão da quantidade de informações disponiveis para consumo. Segundo \citet{eric:techcrunch} a cada 2 dias era criada tanta informação quanto existia até 2003. \citet{wersig1975phenomena}, em um artigo clássico da ciência da informação, propuseram que o grande desafio para a área seria transmitir o conhecimento para aqueles que dela necessitam, esse crescimento alavancou a quantidade de informações acessíveis em várias partes do mundo que antes eram limitadas a certas regiões, livros, países.\\
+  O problema que se criou é para a recuperação dessas informações. A internet da forma que conhecemos é orientada a documentos, com marcação de hipertexto onde as informações fazem total sentido para humanos, capaz de entender a semântica por trás das linhas de textos, interpretar dados colocados a nossa frente em telas de computadores, tablets, smartphones e assim por diante, porém a web\footnote{Web é abreviatura universalmente usada para World Wide Web} não foi planejada para que as informações fossem recuperadas de forma automatizadas, com robôs fazendo o trabalho de extração e ligação das informações ali contidas.\\
+  Além disso, há outra preocupação atual no contexto da aquisição de conhecimento, isto é, como alimentar de forma qualitativa as bases de dados a partir de uma quantidade grande de informações  disponível e ainda representá-las de forma precisa para viabilizar uma futura recuperação.
+  
+
+    \begin{quotation}
+      \textit{"A aquisição e representação do conhecimento é o processo de maior importância na construção de um sistema especialista e levou ao surgimento de uma nova área na Ciência da Computação: a Engenharia do Conhecimento. A tarefa do engenheiro do conhecimento é “extrair” dos especialistas humanos os seus procedimentos, estratégias, raciocínios e codificalos de forma adequada a fim de gerar a base de conhecimento. \citet{ferneda2003recuperaccao}"}
+    \end{quotation}
+
+    A recuperação da informação na internet tem desafios próprios e peculiares, causados por um crescimento exponencial, onde os dados não foram criados de forma planejada e estruturada, criando assim uma necessidade de interpretação cognitiva dos dados, não estando prontos diretamente para serem analisados e processados por sistemas computacionais. \\
+
+    Deste modo, um campo novo na Recuperação da Informação surgiu, colocando humanos e sistemas computacionais para trabalhar em conjunto e transformar em conhecimento toda a enorme quantidade de dados criados diariamente. Com isso é importante ressaltar que essa iteração seja a mais natural possível, esse processo pode utilizar-se de ferramentas para visualização dos dados, já que é essa  a principal forma de percepção humana, criando-se mapas, diagramas, gráficos, reduzindo o máximo possível a carga cognitiva exigida do usuário \citet{zhang2007visualization}.\\
+    Hoje existem sistemas para recuperar informações de dados ligados, dentre os existentes, há o construído por \citet{cristovao2016modelo} que além de recuperar a informação, também constrói uma visualização a partir da recuperação. Essa  está em concordância com o que foi dito por \citet{zhang2007visualization}.\\
+    O protótipo desenvolvido por \citet{cristovao2016modelo} usa técnicas aplicadas a análise de redes complexas para descobrir relacionamentos entre os termos inseridos, essas informações são recuperadas do banco da DBpedia\footnote{DBpedia é um projeto cujo objetivo é extrair conteúdo estruturado das informações da Wikipédia}, maior base de dados ligados abertos atualmente. Essas informações são ligadas através de triplas compostas por sujeito, predicado e objeto.\\
+    Por se tratar de um protótipo, o modelo desenvolvido por \citet{cristovao2016modelo} necessita de uma integração melhor, para que a operacionalização do modelo por parte de um usuário se torne mais fluída e natural.\\
+    Deste modo, o problema central abordado por essa pesquisa é como elaborar uma interface para entrada de informações do protótipo de \citet{cristovao2016modelo} para oferecer interatividade ao usuário e, consequentemente, transformar sua experiência, auxiliando na recuperação do conhecimento.
+    
+
+\section{Objetivos}
+
+\subsection{Objetivo geral}
+
+Impactar a experiência do usuário com o protótipo desenvolvido por \citet{cristovao2016modelo} através da modelagem e implementação de uma interface gráfica que auxilie na recuperação da informação contida na DBpedia.
+\subsection{Objetivos específicos}
+
+\begin{itemize}
+    \item Pesquisar, analisar, definir metodologias e ferramentas propícias para o desenvolvimento de uma interface interativa para entrada de dados para a recuperação do conhecimento.
+    \item Desenvolver a interface de entrada dos dados a serem recuperados
+    \item Integrar a interface criada no protótipo criado por \citet{cristovao2016modelo}
+  \end{itemize}
+
+
+  \chapter{Referencial teórico}
+  
+      \section{Web semântica, Linked Open Data, DBpedia}
+      A internet é uma enorme e complexa rede de computadores e outros dispositivos capazes de se comunicar, todos conectados, compartilhando informações entre si, através de uma variedade de formatos de comunicação, como serviços e gerenciadores de informações podem acessar dados através de protocolos TCP/IP, HTTP, FTP.\\
+      \citet{berners2001semantic} diz que computadores devem ter acesso a coleções de informações de forma estruturada, para que sejam capazes de recuperar toda a informação contida nos dados e usar de forma automatizada para algum propósito. Nesse cenário, podemos encarar uma das definições de web semântica mais precisas proposta por \citet{siegel2009pull} onde diz que a ela é uma \textit{unambiguous web}. Essa visão traz a web semântica para um escopo “\textit{desambiguado}”, onde máquinas seriam capazes de entender o significado dos dados em qualquer contexto, sem intersecções de interpretações. Compreende, por exemplo, que o Esporte Clube Vitória fica sediado em Salvador, que é diferente de Vitória da Conquista, que por sua vez é distante de Vitória, capital do Espírito Santo \citet{saad2012cena}.\\
+      A web semântica não é uma web separada da já existente e sim uma extensão da atual, onde as informações dadas são bem definidas, o que torna computadores capazes de trabalhar melhor em conjunto com pessoas na recuperação da informação. Com esses esforços para criar a web semântica em um futuro próximo os computadores serão capazes de processar e entender as informações contidas na web de uma forma muito melhor que a atualmente \citet{berners2001semantic}.\\
+      Não é sobre apenas disponibilizar dados informações, e sim sobre como colocar dados de forma ligada(linked data) para que pessoas e computadores sejam capazes de navegar entre os links de informação e extrair conteúdo contidos naqueles dados \citet{berners2010linked}. \\
+      A forma como os dados ligados podem ser representados variam, sendo a mais utilizada na forma de grafos, onde os nós estão ligados semanticamente formando um grande grafo global com informações vindas de várias fontes espalhadas pelo planeta, que é o conceito central da web de dados, outra forma de nomenclatura para a web semântica \citet{segundo2015web}.
+      Apesar das similaridades, web dos dados e LOD\footnote{Linked Open Data} são coisas distintas, de acordo com \citet{heath2011linked} LOD é um conjunto de boas práticas para publicação e conexão de forma estruturada na web, permitindo fazer links entre diferentes publicações que foram feitas em diversas fontes.\\
+      Para \citet{berners2010linked},
+      “A Web Semântica não trata apenas de depósito de dados na web. Trata-se de fazer ligações, de modo que uma pessoa ou máquina possa explorar esse conjunto de dados. Com LOD, quando você tem um pouco de dados, você pode encontrar outros que estão relacionados.”
+        Na construção LODs se utilizam quatro princípios introduzidos por \citet{berners2010linked}:\\
+        \begin{enumerate}
+          \item Usar URIs como nomes para os itens.
+          \item Usar URIs HTTP para que as pessoas possam consultar esses nomes.
+          \item Quando alguém consulta uma URI, provar informação RDF\footnote{RDF é uma abreviação amplamente utilizada para Resource Description Framework que é um conjunto de especificações da World Wide Web Consortium (W3C) para dados e metadados na web.
+          } útil.
+          \item Incluir sentenças RDF com links para outras URIs, a fim de permitir que itens relacionados possam ser descobertos.
+        \end{enumerate}
+      Uma representação de LOD e web dos dados é majoritariamente baseada em conceitos e aplicações da linguagem RDF, que se aproxima da forma como cérebros humanos fazem para construir e organizar a memória \citet{segundo2015web}.
+      Uma definição de RDF apresentada por \citet{lassila1998resource},
+      \begin{quote}
+        “RDF é uma aplicação da linguagem XML que se propõe ser uma base para o processamento de metadados na Web. Sua padronização estabelece um modelo de dados e sintaxe para codificar, representar e transmitir metadados, com o objetivo de torná-los processáveis por máquina, promovendo a integração dos sistemas de informação disponíveis na Web”.
+      \end{quote}
+  
+  
+    \section{Recuperação do conhecimento}
+      Recentemente a palavra “informação” passou a ser bastante utilizada, não só na construção de discursos, mas também na elaboração de disciplinas relacionadas a ciências da computação e informática, além dos cursos de humanas.
+      Com a forte inserção tecnológica vivida nos últimos tempos, a definição de “informação” que se sobressai é aquela que permite sua operacionalização por meio de sistemas computacionais \citet{ferneda2003recuperaccao}.\\
+      Na Ciência da Computação o significado de informação se assemelha ao de \citet{shannon1949mathematical}, mais apropriada para a construção de sistemas computacionais onde dados podem ser montados por meio de descrições formais, podendo ser analisados, processados e armazenados.
+      \begin{quote}
+        “Não é possível processar informação diretamente em um computador. Para isso é necessário reduzi-la a dados.”\citet{setzer2001meios}.
+      \end{quote}
+  
+  
+    \section{Visualização de Informação e Conhecimento}
+    De todos os nossos sentidos, a visão é a que mais nos auxilia na percepção do mundo ao nosso redor, sendo fundamental para a nossa independência e para que consigamos viver sem necessidade de auxílios especiais, então, se torna necessário utilizar essa poderosa ferramenta para que auxilie no aprendizado, aumentando assim a nossa capacidade de assimilar conhecimento através da visualização de informações \citet{eppler2006knowledge}.\\
+    Conhecimento é a informação que foi extraída através de um conjunto de dados através de alguma forma de processamento cognitivo e por fim é agregado a estrutura humana de conhecimento, e sempre está em transformação \citet{tergan2005knowledge}.\\
+    De acordo com \citet{eppler2006knowledge} falta na literatura sistemáticas para avaliar o potencial da visualização das informações para transferir o conhecimento. Para \citet{melgar2011modelo}, “esta lacuna é a que a visualização do conhecimento tenta preencher”.\\
+    Existem diversas formas para visualizar o conhecimento, entre elas: gráficos, esquemas, tabelas, mapas, diagramas e infográficos \citet{lapolli2014visualizaccao}. Logo a visualização do conhecimento é uma forma de auxiliar que um conjunto de informações se torne conhecimento, facilitando a manipulação do conjunto de dados apresentado e tornando propício sua interpretação \citet{zhang2007visualization}.
+ 
+
+    \section{Usabilidade e Interface Homem-Máquina}
+    A interface Homem-máquina (IHM) é a área de estudos responsável pelo projeto, evolução e implementação de interfaces interativas para o uso humano. Também avalia os principais fenômenos a eles relacionados \citet{hewett1992acm}. \\
+    Existe uma gama de áreas de estudos sobre como melhorar a usabilidade e representatividade de uma interface para o usuário, de acordo com \citet{valente2004padroes} que cita algumas como: Ciências da Computação, Psicologia e Ergonomia, porém não existe um consenso sobre o assunto entre os profissionais da área. Antes de se formatar uma interface com o usuário, há a necessidade de se atingir certos objetivos, já que sem eles não adiantaria nada ter uma interface ótima se o software inteiro não é capaz de atender as necessidades minimas do usuário. Após se definir qual o objetivo da interface, devem ser seguidas oito regras. As regras de \citet{shneiderman2010designing} e \citet{de2015ergonomia}, consideradas regras de ouro da usabilidade, compõem princípios básicos para a criação da IHM e são utilizadas em desenvolvimento de sistemas interativos. Eles se desenvolveram no decorrer da vivência profissional, por isso, sempre devem ser analisados e lapidados para cada projeto IHM.\\
+    Ademais das regras citadas acima, há também heurísticas de usabilidade. De acordo com a norma ISO9241 \citet{bevan2001international} é:
+    \begin{quote}
+      "a capacidade que um sistema interativo oferece ao seu usuário, em um determinado contexto de operação, para a realização de tarefas de maneira eficaz, eficiente e agradável".
+    \end{quote}
+
+    Jakon Nielsen e Rolf Molich, desenvolveram em 1990 heurísticas para julgar a usabilidade, porém apenas em 1994, depois da verificação de 249 questões de usabilidade, determinaram 10 heurísticas mais assertivas e claras e essas heurísticas foram determinadas como as 10 heurísticas de Nielsen \citet{nielsen1994usability}.\\
+    Com o objetivo de minimizar aspectos negativos de interfaces mal desenhadas e atenuar a ambiguidade na identificação e catalogação das qualidades e restrições das aplicações interativas, o cientista Dominique Scapin elaboraram alguns critérios ergonômicos que se classificam em critérios e sub-critérios elementares \citet{de2015ergonomia}. Portanto, considerar estes aspectos facilita a escolha dos aspectos e contextos de uso da interface deve ser priorizada, ocasionando num melhor forma de mensurar a usabilidade.
+
+    \section{Recuperação interativa de informações}
+    A Recuperação interativa de informações (IIR\footnote{Interative Information Retrieval}) também conhecida como recuperação de informação humano-computador (HCIR\footnote{Human-computer Information Retrieval}) \citet{marchionini2006toward}. Concentra os estudos e análises da iteração de usuários com sistemas de recuperação de informação (IR\footnote{Information Retrieval}) e a satisfação com as informações retornadas. "Interativo" implica o envolvimento de usuários humanos em conjunto com a recuperação de informação (IR).\\
+    Como \citet{cool2011interactive} explicam, a diferenciação entre IR e IIR é encontrada no começo da história de sistemas computadorizados de recuperação da informação, especialmente porque suas avaliações são feitas por grupos de estudos bem diferentes. IR surgiu como uma disciplina empírica por volta de 1953 que com uma série de testes que chegou ao modelo de Cranfield \citet{cleverdon1966aslib}. Os diferentes grupos citados por \citet{cool2011interactive} são Ciências da computação e Ciências da informação responsáveis por IR e IIR respectivamente. \\
+    Uma aproximação baseada no usuário sempre existiu em paralelo com a recuperação da informação baseada em sistemas, mas apenas relativamente recente, com a democratização da internet, essa área se estabeleceu e passou a ganhar bastante destaque. \citet{robertson1992evaluation} explica esse deslocamento de foco que levou ao estabelecimento da área de IIR com três revoluções: Cognitiva, Interativa e Relevância. Ao mesmo tempo, \citet{ingwersen1992information} publicou seu livro \textit{Information Retrieval Interaction} que tem ideias semelhantes as propostas por \citet{robertson1992evaluation}.\\
+    Com essa mudança de foco, surgiram novos desafios, como o descrito por \citet{spink2005multitasking} que fala sobre o usuário nem sempre conseguir descrever de forma satisfatória a informação que deseja recuperar, assim trazendo resultados insatisfatórios, isso sugere a necessidade da criação de técnicas para que possa auxiliar o usuário na sua busca por informação de forma interativa, fazendo uma melhor junção dos sistemas IR e IIR \citet{kelly2013systematic}.
+
+    \section{Considerações finais sobre o referencial teórico}
+    Como mostrado, há uma interoperabilidade entre várias áreas do conhecimento dentro do campo da web semântica, onde passamos por vários assuntos, desde a estrutura organizacional de como os dados são armazenados, ligados e recuperados, como também o auxílio a essa recuperação da informação.\\
+    Hoje, com o aumento de usuários ligados no mundo todo é preciso construir novas formas para se pesquisar informações, de forma que sistemas computacionais possam interagir com usuários humanos fazendo com que a capcidade computacional se alie a capacidade cognitiva humana para uma recuperação de informações mais assertivas e estruturadas, onde é preciso desenvolver ferramentas para que sejam escaláveis, usáveis e eficazes dentro do assunto proposto.
+
+	\chapter{Metodologia}
+	Um processo de software (ou metodologia de desenvolvimento de software) é composto por um conjunto de atividades que colaboram para o desenvolvimento de um software. Dentre estas, existem etapas como levantamento de requisitos, codificação e etc. O resultando obtido ao final do processo, é fruto de como ele foi conduzido \citet{INFOCOMP}.\\
+	Há vários processos para desenvolvimento de software, mas existem etapas que são fundamentais em todos eles \citet{sommerville2003engenharia}:
+
+	\begin{itemize}
+		\item \textbf{Especificação de Software:} Definição dos requisitos e limitantes do sofware. Comumente é a fase que o desenvolvedor dialoga com o cliente para definir os requisitos do software.
+		
+		\item \textbf{Projeto e implementação de Software:} A aplicação é desenvolvida em acordo com o que foi definido na fase de especificação. Durante esta etapa são usados diagramas e recursos visuais para propor modelos, esses por sua vez são implementados em alguma(s) linguagens de programação.
+		
+		\item \textbf{Validação:} Essa etapa a aplicação desenvolvida é checada, verificando se todos os requisitos especificados foram implementados.
+		
+		\item \textbf{Evolução:} Etapa pós conclusão, onde o software estará em constante melhoria, para sempre atender os anseios do cliente.
+	\end{itemize}	
+	
+	Uma primeira fase foi feita, realizando uma pesquisa a respeito do tema do projeto, revisão bibliográfica para a partir deste ponto se iniciar a proposta de interface seguindo uma metologia de desenvolvimento de software para a execução do projeto.
+	\section{Metodologia Ágil}
+	As metodologias ágeis se popularizaram em 2001, quando dezessete especialistas em algumas metodologias de desenvolvimento. Representando o método Scrum schwaber2002agile, \textit{Extreme Programming} (XP), \citet{beck2004programaccao} e outros, criaram premissas para o desenvolvimento de software, essas contribuiram para a criação da Aliança Ágil, que resultaria em 2004 no Manifesto Ágil \citet{beck2001manifesto}.
+	
+	Os conceitos básicos por tal manifesto de \citet{beck2001manifesto} que aqui serão adotadas são:
+	\begin{itemize}
+		\item Pessoas e interações ao invés de processos e ferramentas.
+		
+		\item Software executável ao invés de documentação
+		
+		\item respostas rápidas a mudanças.
+	\end{itemize}
+
+	Os requisitos para a interface ser implementada no prototipo desenvolvido por \citet{cristovao2016modelo} foram levantados durante a fase de pesquisa bibliográfica e estudo do problema. Sendo assim o conjunto básico de requisitos a serem cumpridos até então são:
+	\begin{itemize}
+		\item Interface para entrada dos dados a serem recuperados através do modelo criado por \citet{cristovao2016modelo}.
+		
+		\item Sistema para sugestão de termos a serem pesquisados, isso auxiliará o usuário na recuperação do conhecimento, sugerindo termos próximos ao que ele procura.
+		
+		\item Integrar a interface ao protótipo desenvolvido por \citet{cristovao2016modelo}
+	\end{itemize}
+	
+	No período de planejamento, por meio de pesquisa e discussão entre o orientador e aluno foram definidas algumas tecnologias e ferramentas a serem utilizadas no desenvolvimento do trabalho, as quais são listadas a seguir:
+	\begin{itemize}
+		\item Git\footnote{Ferramenta de versionamento. Disponível em: https://git-scm.com/book/pt-br/v1/Primeiros-passos-Uma-Breve-Hist%C3%B3ria-do-Git
+		}: É um sistema amplamente utilizado por desenvolvedor ao redor do mundo para se fazer versionamento de código, podendo manter várias versões em paralelo, dentre suas principais vantagens estão: Velocidade, design simples, suporte robusto a desenvolvimento não linear (milhares de branches paralelos), totalmente distribuido, capaz de lidar facilmente com grandes projetos (foi proposto inicialmente para ser a ferramenta de versionamento de código do kernel do linux).
+		
+		\item GitHub\footnote{Repositório de código na nuvem, utiliza sistema git. Disponível em: http://github.com}: O GitHub é uma plataforma de desenvolvimento focada em ajudar equipes a desenvolverem de forma mais natural e sem conflitos de código. De código-fonte aberto a negócios, É possível hospedar e revisar código, gerenciar projetos e construir software ao lado de milhões de outros desenvolvedores.
+		
+		\item Java\footnote{Linguagem de programação open-source e orientada a objetos. Disponível em: http://www.oracle.com/technetwork/java/index.html}: Java é uma linguagem de programação orientada a objetos, sendo adequada para desenvolvimento de aplicações web, mobile e Desktop \citet{campionejava}. Java foi escolhida como linguagem a se desenvolver a interface devido a sua robustez, forte documentação e suporte encontrada na comunidade de desenvolvedor, não ser dependente de sistema \textit{"write once, run anywhere"\footnote{Em tradução livre: Programe uma vez, rode em qualquer lugar.}}\cite{blom2008write}. Além de todos os benefícios já citados, o protótipo de \citet{cristovao2016modelo} foi desenvolvido em Java, o que facilita sua integração.
+		
+		\item Ecplipse\footnote{Eclipse é um ambiente integrado de desenvolvimento. Disponível em https://eclipse.org.}: é um ambiente integrado de desenvolvimento \textit{(integrated development enviroment - IDE)} utilizada para auxiliar no desenvolvimento de sistemas em várias linguagens, sendo a principal Java, é distribuída sobre a licença GNU General Public License\footnote{GNU General Public License é uma licença para software livre. Disponível em: https://www.gnu.org/licenses/gpl-3.0.en.html}, e possui várias ferramentas para auxiliar em todas as fases de desenvolvimento, como por exemplo, integração com Git e Github, auxílio gráfico na criação de interfaces e etc.
+		
+		\item JavaFX\footnote{JavaFX é a biblioteca Java oficial para interfaces gráficas. Disponível em: http://docs.oracle.com/javase/8/javase-clienttechnologies.htm}: JavaFX é uma plataforma de software multimídia desenvolvida pela Oracle baseada em java para a criação e disponibilização de aplicações para Internet que pode ser executada em vários dispositivos diferentes.
+		
+		\item Zotero: Ferramenta para gerenciamento e organização de referências bibliográficas.
+	\end{itemize}
+
+	\section{Cronograma}
+	\subsection{Atividades}
+	\begin{table}[h]
+		\caption{Lista de atividades}
+		\centering
+		\begin{tabular}{l}
+			\hline
+			Cronograma de atividades \\ \hline
+			1 - Pesquisa e estudos a respeito da Web Semântica, Linked Open Data, recuperação da\\informação, usabilidade de sistemas. \\
+			2 - Identificação e levantamento de trabalhos relacionados a usabilidade, interfaces e\\recuperação da informação.\\
+			3 - Definição dos requisitos necessários para desenvolvimento da interface proposta.\\
+			4 - Definição das ferramentas utilizadas na criação da interface.\\
+			5 - Estudo das ferramentas definidas.\\
+			6 - Desenvolvimento da interface.\\
+			7 - Integração da interface ao protótipo criado por \citet{cristovao2016modelo}\\
+			\hline
+		\end{tabular}
+	\end{table}
+	\backmatter
+	\subsection{Cronograma (Maio/2018 a Dezembro 2018)}
+		\begin{table}[h]
+			\caption{Lista de atividades}
+			\centering
+			\begin{tabular}{l|l|l|l|l|l|l|l|l}
+				\hline
+					Atividade&Mai & Jun & Jul & Ago & Set & Out & Nov & Dez \\
+				\hline
+				1 & X & X & X & X & X & & &\\
+				\hline
+				2 & X & X & X & & & & &\\
+				\hline
+				3 & & & X & X & & & &\\
+				\hline
+				4 & & & X & X & X & & &\\
+				\hline
+				5 & & & & X&X &X &X &\\
+				\hline
+				6 & & & & & &X &X &X\\
+				\hline
+				7 & & & & & & &X &X\\
+				\hline
+			\end{tabular}
+		\end{table}
+	
+	
+	
+  \backmatter
+  \bibliographystyle{ufescomp-unsrt}
+  \bibliography{bibliografia}
+  \end{document}
